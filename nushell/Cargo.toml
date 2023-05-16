@@ -1,0 +1,14 @@
+[package]
+name = "nushell"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+	"crates/nu-cmd-dataframe",
+	"crates/nu-command",
+]
+
+[dependencies]
+nu-cmd-dataframe = { path = "./crates/nu-cmd-dataframe" }
+nu-command = { path = "./crates/nu-command"}
